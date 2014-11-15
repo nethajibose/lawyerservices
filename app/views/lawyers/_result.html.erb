@@ -1,0 +1,28 @@
+<div class="list_payment_table">
+	<div class="table-responsive">
+		<% unless lawyers.blank? %>
+				<div id="phs" class="pull-left">
+					<table id="ph_div">
+						<tr class="bg_color">
+						<td>Name</td>
+						<td>Experience</td>
+						<td>Rating</td>
+						<td>Services</td>
+						</tr>
+						<% lawyers.each do |lawyer|%>
+								<tr>
+								<td><%= lawyer.name %></td>
+								<td><%= lawyer.experience %></td>
+								<td><%= lawyer.rating %></td>
+								<td><%= link_to get_service_count(service_counts, lawyer.id), lawyer_service_path(lawyer.id), :remote => true %></td>
+								</tr>
+						<% end %>
+					</table>
+				</div>
+		<% else %>
+				No Lawyers Found
+		<% end %>
+		<div class="services_list pull-right"></div>
+		<div class="clearfix"></div>
+	</div>
+</div>

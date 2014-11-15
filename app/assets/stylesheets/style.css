@@ -1,0 +1,55 @@
+.header {
+	margin: 20px;
+}	
+.wrapper{
+	border-top: 5px solid #03aff0;
+	margin: 20px;
+}
+.content{
+	min-height: 500px;
+	margin :30px 0 0 30px;
+}
+.header-text{
+	font-size: 30px;
+	color: #4d4d4d;
+	font-weight: bold;	
+}	
+.overlay-inner {
+	background: rgba(0, 0, 0, 0.4);
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+	transition: all 1s ease 0s;
+}
+.spinner {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin: -25px 0 0 -25px;
+	z-index: 201;
+	background: #333;
+	padding: 10px;
+	border-radius: 10px;
+}
+.table-responsive table .paddingleft20{padding-left:0!important;}
+.list_payment_table table{ width:45%; border:1px solid #c3c6c9;border-collapse:separate; border-radius: 5px 5px 5px 5px;}
+.list_payment_table table td {
+  border-bottom: 1px solid #eef3f5;
+  padding: 10px 20px;
+}
+.list_payment_table table tr.bg_color{background-color: #eef3f5 !important;}
+.list_payment_table table tr:nth-child(even) {background: #fff}
+.list_payment_table table tr:nth-child(odd) {background: #fafbfc}
+#lawyers_list{
+	margin-top : 30px;
+}
+.form-control {
+height: 40px;
+font-size: 14px;
+}
+.reload-btn {margin-left: 10px;}

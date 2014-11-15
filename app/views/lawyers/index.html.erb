@@ -1,0 +1,7 @@
+<%= form_tag search_lawyers_path, :remote => true do %>
+<div class="col-md-3 col-sm-3"><%= text_field_tag "city", "", :class => "form-control", :placeholder => "city" %></div>
+<div class="col-md-3 col-sm-3" id="service_text" style="display:none;"><%= text_field_tag "service", "", :class => "form-control", :placeholder => "service" %></div>
+<%= hidden_field_tag "city_id" %>
+<div class="col-md-3 col-sm-3"><%= submit_tag "Search", :id => "search_lawyers", :class => "btn btn-default" %> <%= link_to "Reload", root_path, :class => "reload-btn" %></div>
+<% end %>
+<div id="lawyers_list" class="col-md-12"></div>

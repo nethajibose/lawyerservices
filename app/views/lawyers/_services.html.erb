@@ -1,0 +1,20 @@
+<% unless services.blank? %>
+		<div id="phs">
+			<table id="ph_div">
+				<tr class="bg_color">
+				<td>Code</td>
+				<td>Service Name</td>
+				<td>Charges</td>
+				</tr>
+				<% services.each do |service|%>
+						<tr>
+						<td><%= service.code %></td>
+						<td><%= service.service_name %></td>
+						<td><%= service.amount %></td>
+						</tr>
+				<% end %>
+			</table>
+		</div>
+<% else %>
+		No Services Found
+<% end %>

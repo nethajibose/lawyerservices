@@ -1,0 +1,6 @@
+$("#lawyers_list").html("");
+$("#lawyers_list").html("<%= j render(:partial => 'lawyers/result', :locals => {:lawyers => @lawyers, :service_counts => @service_counts}) %>");
+<% unless @lawyers.blank? %>
+	$("#service_text").show();
+<% end %>
+$(".overlay-wrap").hide();

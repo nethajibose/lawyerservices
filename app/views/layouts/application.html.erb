@@ -2,13 +2,25 @@
 <html>
 <head>
   <title>Lawyerservices</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag "application", "jquery-ui", "style", "blue" %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
+<div class="header">
+	<span class="header-text">Welcome to Lawyer Services</span>
+</div>
+</header>
+<div class="wrapper">
+<div class="content">
 <%= yield %>
-
+</div>
+</div>
+<div class="overlay-wrap" style="display:none;">
+  <div class="overlay-inner"></div>
+  <div class="spinner">
+    <img src="<%= asset_path('loading.gif') %>" width="50" height="50">
+  </div>
+</div>
 </body>
 </html>
